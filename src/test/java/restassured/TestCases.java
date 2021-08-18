@@ -14,7 +14,7 @@ import io.restassured.response.Response;
 public class TestCases {
 
 	final String baseURI = "https://api.github.com/";
-	final String token = "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 "; // Bearer Token to create a GIST from my github account
+	final String token = "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 "; // Bearer Token to create a GIST from my github 
 	String gistId;
 	File createGist = new File("src/test/resources/CreateGist.json");
 	File editGist = new File("src/test/resources/EditGist.json");
@@ -25,7 +25,7 @@ public class TestCases {
 		RestAssured.baseURI = baseURI;
 
 	}
-
+	
 	@Test
 	public void noAuthentication_readGistsAll() {
 
